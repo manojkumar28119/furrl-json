@@ -4,7 +4,7 @@ const app = express();
 
 
 // Serve your JSON data
-app.get('/api/products', (req, res) => {
+app.get('/', (req, res) => {
   const data = require('./data.json');
   res.json(data);
 });
