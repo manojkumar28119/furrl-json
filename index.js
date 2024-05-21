@@ -1,9 +1,7 @@
 const express = require('express');
-const cors = require('cors');
 const app = express();
 
-// Use CORS to allow requests from your frontend app
-app.use(cors());
+
 
 // Serve your JSON data
 app.get('/api/products', (req, res) => {
