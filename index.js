@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
-
+// Use CORS to allow requests from any origin
+app.use(cors());
 
 // Serve your JSON data
 app.get('/', (req, res) => {
